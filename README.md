@@ -82,7 +82,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 #Clone the repository:
 
-git clone https://github.com/your-username/face-mask-detection-cnn.git
+git clone https://github.com/sneha456/face-mask-detection-cnn.git
 
 #Install required libraries:
 
