@@ -51,9 +51,90 @@ without_mask/
 > **Note:** Do not upload the dataset or `kaggle.json` to GitHub. Users should download it themselves.
 
 
-1. **Clone the repository**:
-```bash
+
+#Model Architecture
+
+The CNN model used in this project has the following layers:
+
+Conv2D → activation: relu
+
+MaxPooling2D
+
+Conv2D → activation: relu
+
+MaxPooling2D
+
+Flatten
+
+Dense → activation: relu
+
+Dropout → 0.5
+
+Dense → activation: sigmoid (binary classification)
+
+Compiled with:
+
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+
+
+#How to Run the Project
+
+#Clone the repository:
+
 git clone https://github.com/your-username/face-mask-detection-cnn.git
+
+#Install required libraries:
+
+pip install -r requirements.txt
+
+#Open the Notebook:
+
+Open face_mask_detection.ipynb in Jupyter Notebook or Google Colab.
+
+Run the Notebook:
+
+Follow the steps to train the model or test predictions on sample images.
+
+If the trained model file is not included, the notebook will train the model automatically.
+Sample Images
+
+The samples/ folder contains example images:
+
+test6.jpg → Person wearing a mask
+test2.jpg → Person not wearing a mask
+
+graph1.jpg
+graphh2.jpg
+→ Graph showing training accuracy 
+screenshot(1).jpg 
+screenshot(2).jpg
+->prediction
+
+These samples help visualize how the model works.
+
+#Requirements
+
+All Python dependencies are listed in requirements.txt.
+
+#Notes
+
+The trained model file (face-mask_model.h5) is not included due to size limits.
+
+Users need to download the dataset to run the notebook.
+
+#Technologies Used
+
+Python
+
+TensorFlow / Keras
+
+OpenCV
+
+Matplotlib
+
+Google Colab
+
 
 
 
